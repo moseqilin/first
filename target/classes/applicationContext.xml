@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:comtext="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+    <bean id="inputstream" class="java.io.FileInputStream">
+        <constructor-arg name="file" value="E:\\pronject_java\\spring_mybatis\\ch01\\src\\main\\java\\com\\huo\\十宗罪1.txt" />
+    </bean>
+    <comtext:component-scan base-package="com.huo" />
+</beans>
